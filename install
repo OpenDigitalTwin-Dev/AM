@@ -1,0 +1,20 @@
+sudo apt update
+sudo apt -y install gcc g++ cmake make libopenmpi-dev libgtest-dev libeigen3-dev libsuperlu-dev libx11-dev libx11-xcb-dev libboost-all-dev
+
+cd ../../toolkit/tetgen
+./install.sh
+
+cd ../protobuf
+./install2.sh
+
+cd ../libarcus
+./install.sh
+
+cd ../cura_engine
+./install.sh
+
+cd ../triangle
+./install.sh
+
+cd ../slice2mesh
+./install.sh
